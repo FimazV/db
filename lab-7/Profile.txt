@@ -1,0 +1,15 @@
+db.setProfilingLevel(2) //включене профилирования (просмотр всех сделанных запросов)
+
+db.system.profile.find().pretty() //просмотр информации о сделанных запросах
+
+db.setProfilingLevel(0) //отключение профилирования
+
+db.expenses.getIndexes() //просмотр существующих индексов
+
+db.expenses.createIndex({"user_id" : 1})
+
+db.expenses.createIndex({"_id" : 1, "user_id" : 1})
+
+db.expenses.createIndex( { _id: "hashed" } )
+
+db.expenses.dropIndex("user_id") //удаление индексов в коллекции

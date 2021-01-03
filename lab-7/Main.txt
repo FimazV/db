@@ -1,0 +1,5 @@
+load("D:/Project/lab7db/roles.js")
+load("D:/Project/lab7db/user.js")
+load("D:/Project/lab7db/profile.js")
+load("D:/Project/lab7db/type_expenses.js")
+load("D:/Project/lab7db/expenses.js")
